@@ -125,6 +125,7 @@ main section.backImage h1 {
     flex-grow: 0;
   }
   header div a.showmenu {
+    color: white;
     display: block;
     position: absolute;
     width: 3rem;
