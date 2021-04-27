@@ -38,6 +38,15 @@ header div.logo div h1 {
   font-size: 2em;
   font-weight: normal;
 }
+header div a.showmenu {
+  display: none;
+  padding: 0.2rem;
+}
+header div a.showmenu img {
+  width: 2.6rem;
+  background-position: center;
+  /* color: white; */
+}
 header nav {
   flex: 2 1 400px;
 }
@@ -105,14 +114,40 @@ main section.backImage h1 {
 @media screen and (max-width: 1000px) {
   header {
     flex-direction: column;
+    position: relative;
+    min-height: 6em;
   }
   header div.logo {
+    position: absolute;
+    top: 0.5em;
+    left: 1em;
     flex-basis: 0;
     flex-grow: 0;
   }
+  header div a.showmenu {
+    display: block;
+    position: absolute;
+    width: 3rem;
+    top: 1em;
+    right: 1em;
+    float: right;
+    /* color: white; */
+  }
   header nav {
+    overflow: hidden;
+    max-height: 0px;
+    background:black;
     flex-basis: 0;
     flex-grow: 0;
+    position: absolute;
+    z-index: 100; 
+    top: 81px;
+    left: 0; 
+    right: 0;
+  }
+  header nav.menu-show{
+    max-height: 500px; 
+    transition: max-height 2.3s;
   }
   header nav ul {
     font-size: 1.5rem;
@@ -122,8 +157,12 @@ main section.backImage h1 {
     align-items: right;
     margin: 0.5rem;
   }
-  header nav ul a {
-    padding: 3rem 0rem;
+  header nav ul li {
+    margin: 0.4rem 0rem;
+  }
+  header div.login {
+    max-height: 0px;
+    overflow: hidden;
   }
   header div a {
     flex-basis: 0;
