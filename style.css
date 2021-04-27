@@ -58,10 +58,14 @@ header nav ul {
   position: relative;
   right: 25rem;
 }
+
 header nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 1.25rem;
+}
+header nav ul li a:hover{
+  color:grey;
 }
 header div {
   flex: 1 1 50px;
@@ -124,11 +128,16 @@ main section.backImage h1 {
     flex-basis: 0;
     flex-grow: 0;
   }
+  header div.logo img{
+    width: 12vw;
+    height: 12vw;
+  }
   header div a.showmenu {
-    color: white;
+    filter: invert();
     display: block;
     position: absolute;
     width: 3rem;
+    height:3rem;
     top: 1em;
     right: 1em;
     float: right;
