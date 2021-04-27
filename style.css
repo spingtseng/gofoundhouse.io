@@ -64,8 +64,8 @@ header nav ul li a {
   text-decoration: none;
   font-size: 1.25rem;
 }
-header nav ul li a:hover{
-  color:grey;
+header nav ul li a:hover {
+  color: grey;
 }
 header div {
   flex: 1 1 50px;
@@ -114,6 +114,19 @@ main section.backImage h1 {
   font-size: 2rem;
   z-index: 2;
 }
+main div {
+  margin: 0 auto;
+  width: 80%;
+  padding: 3rem;
+}
+main div input {
+  width: 100%;
+  height: 3rem;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: lightgray;
+}
 
 @media screen and (max-width: 1000px) {
   header {
@@ -128,7 +141,7 @@ main section.backImage h1 {
     flex-basis: 0;
     flex-grow: 0;
   }
-  header div.logo img{
+  header div.logo img {
     width: 12vw;
     height: 12vw;
   }
@@ -137,7 +150,7 @@ main section.backImage h1 {
     display: block;
     position: absolute;
     width: 3rem;
-    height:3rem;
+    height: 3rem;
     top: 1em;
     right: 1em;
     float: right;
@@ -146,17 +159,17 @@ main section.backImage h1 {
   header nav {
     overflow: hidden;
     max-height: 0px;
-    background:black;
+    background: black;
     flex-basis: 0;
     flex-grow: 0;
     position: absolute;
-    z-index: 100; 
+    z-index: 100;
     top: 81px;
-    left: 0; 
+    left: 0;
     right: 0;
   }
-  header nav.menu-show{
-    max-height: 500px; 
+  header nav.menu-show {
+    max-height: 500px;
     transition: max-height 2.3s;
   }
   header nav ul {
