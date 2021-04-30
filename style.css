@@ -120,7 +120,7 @@ main section.backImage h1 {
   header {
     flex-direction: column;
     position: relative;
-    min-height: 6em;
+    min-height: 6.5em;
   }
   header div.logo {
     position: absolute;
@@ -145,9 +145,9 @@ main section.backImage h1 {
     /* color: white; */
   }
   header nav {
-    overflow: hidden;
-    max-height: 0px;
+    display: none;
     background: black;
+    max-height: 0px;
     flex-basis: 0;
     flex-grow: 0;
     position: absolute;
@@ -161,15 +161,17 @@ main section.backImage h1 {
     transition: max-height 2.3s;
   }
   header nav ul {
+    background-color: black;
+    border-radius: 0.2em;
     font-size: 1.5rem;
     width: 100%;
     flex-direction: column;
     position: sticky;
     align-items: right;
-    margin: 0.5rem;
+    margin: 0.8rem 0rem;
   }
   header nav ul li {
-    margin: 0.4rem 0rem;
+    margin: 0.4rem 0.5rem;
   }
   header div.login {
     max-height: 0px;

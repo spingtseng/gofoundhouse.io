@@ -18,7 +18,7 @@
     />
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" href="./picture/logo.png" />
-    <title>房價預測| Go Found House</title>
+    <title>周邊機能 | Go Found House</title>
     <style>
       .container {
         padding-top: 30px;
@@ -63,10 +63,10 @@
           <h1 style="font-size: 1rem">Go Found House</h1>
         </div>
       </div>
-      <div>
-        <a href="" class="showmenu"><img src="./picture/list.png" alt="" /></a>
+      <div onclick="toggleMenu();">
+        <a href="#" class="showmenu"><img src="./picture/list.png" alt="" /></a>
       </div>
-      <nav class="menu-show">
+      <nav id="menuShow">
         <ul>
           <li><a href="./index.html">首頁</a></li>
           <li><a href="./district.html">行政區</a></li>
@@ -78,12 +78,6 @@
       <div class="login">
         <a href="#">會員登入</a>
       </div>
-      <script>
-        $(".showmenu").on("click", function (e) {
-          e.preventDefault();
-          $("body").toggleClass("menu-show");
-        });
-      </script>
     </header>
     <!-- main -->
     <main>
