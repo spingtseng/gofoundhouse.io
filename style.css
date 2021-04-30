@@ -120,7 +120,7 @@ main section.backImage h1 {
   header {
     flex-direction: column;
     position: relative;
-    min-height: 6.5em;
+    min-height: 6em;
   }
   header div.logo {
     position: absolute;
@@ -130,8 +130,8 @@ main section.backImage h1 {
     flex-grow: 0;
   }
   header div.logo img {
-    width: 12vw;
-    height: 12vw;
+    width: 5em;
+    height: 5em;
   }
   header div a.showmenu {
     filter: invert();
