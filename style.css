@@ -162,7 +162,6 @@ main section.backImage h1 {
   }
   header nav ul {
     background-color: black;
-    border-radius: 0.2em;
     font-size: 1.5rem;
     width: 100%;
     flex-direction: column;
