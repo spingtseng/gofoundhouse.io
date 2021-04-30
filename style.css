@@ -115,6 +115,26 @@ main section.backImage h1 {
   z-index: 2;
 }
 
+.news-source {
+  font-size: 0.5em;
+}
+.news-time {
+  font-size: 0.5em;
+}
+.card-text {
+  min-height: 8rem;
+}
+.card-img-top {
+  height: 10em;
+}
+.card-title a {
+  text-decoration: none;
+  color: black;
+}
+.card-title a:hover {
+  text-decoration: none;
+  color: gray;
+}
 
 @media screen and (max-width: 1000px) {
   header {
