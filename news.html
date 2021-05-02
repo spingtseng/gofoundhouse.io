@@ -1,236 +1,309 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="購房好事|Go Found House 給您台北市最合理的房價資訊">
+    <meta
+      name="description"
+      content="購房好事|Go Found House 給您台北市最合理的房價資訊"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" href="./picture/logo.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
     <style>
       .btn-primary {
-      color: #fff;
-      background-color: black;
-      border-color: black;
+        color: #fff;
+        background-color: black;
+        border-color: black;
       }
-      .btn-primary:hover{
-      color: #fff;
-      background-color:gray;
-      border-color: gray;
+      .btn-primary:hover {
+        color: #fff;
+        background-color: gray;
+        border-color: gray;
       }
     </style>
     <title>最新消息 | Go Found House</title>
-</head>
-<body>
-  <script src="./app.js"></script>
-  <!-- header -->
-  <header>
-    <div class="logo">
-      <img src="./picture/logo.png" alt="Logo" />
-      <div>
-        <h1>購房好事</h1>
-        <h1 style="font-size: 1rem">Go Found House</h1>
-      </div>
-    </div>
-    <div onclick="toggleMenu();">
-      <a href="#" class="showmenu"><img src="./picture/list.png" alt="" /></a>
-    </div>
-    <nav id="menuShow">
-      <ul>
-        <li><a href="./index.html">首頁</a></li>
-        <li><a href="./district.html">行政區</a></li>
-        <li><a href="./lifefunction.html">周邊機能</a></li>
-        <li><a href="./houseprice.html">房價預測</a></li>
-        <li><a href="#">最新消息</a></li>
-      </ul>
-    </nav>
-    <div class="login">
-      <a href="#">會員登入</a>
-    </div>
-  </header>
-  <main> 
-     <div class="job">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-lg-3 mt-2 card-box">
-          <img
-            src="https://hp1.591.com.tw/house/active/2021/04/28/161958100319153603_820x9999.scale.water1.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title"><a href="https://news.591.com.tw/news/6482" target="_blank">北捷25周年 木柵線沿線房價翻倍成長</a></h5>
-              <p class="news-time">
-                2021-04-28
-              </p>
-              <p class="card-text">
-                台北捷運上月滿25週年，根據中信房屋統計，第一條商轉捷運路線「木柵線」25年來以六張犁站到忠孝復興站的大安區成長幅度最大，房價成長了1.72倍。
-              </p>
-              <p class="news-source">
-                資料來源：591租屋網
-              </p>
-              <a href="https://news.591.com.tw/news/6482" class="btn btn-primary" target="_blank">顯示更多</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3 mt-2 card-box">
-          <img
-            src="https://hp2.591.com.tw/house/active/2021/04/28/161957593860038803_820x9999.scale.water1.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title"><a href="https://news.591.com.tw/news/6481" target="_blank">都更夯 西區地標遠百寶慶店將重建轉型</a></h5>
-              <p class="news-time">
-                2021-04-28
-              </p>
-              <p class="card-text">
-                都市更新勢在必行，除了住宅之外，包括國賓、福華、馥敦、王朝等不少飯店、百貨也跟上這波危老都更熱潮。
-              </p>
-              <p class="news-source">
-                資料來源：591租屋網
-              </p>
-              <a href="https://news.591.com.tw/news/6481" class="btn btn-primary">顯示更多</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3 mt-2">
-          <img
-            src="https://hp1.591.com.tw/house/active/2021/04/19/161882382462305100_820x9999.scale.water1.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title"><a href="https://news.591.com.tw/news/6426" target="_blank">上半年推案量逾百億 1300萬入主中山</a></h5>
-              <p class="news-time">
-                2021-04-27
-              </p>
-              <p class="card-text">
-                中山上半年預計超過百億量體進場，其中有總銷30億指標案，近期捷運多小宅案場，坪數約10~35坪，最低1300萬可入住北市，未來供給量充足。
-              </p>
-              <p class="news-source">
-                資料來源：591租屋網
-              </p>
-              <a href="https://news.591.com.tw/news/6426" class="btn btn-primary">顯示更多</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3 mt-2">
-          <img
-            src="https://media.zenfs.com/ko/setn.com.tw/fbf0732dfe04c880556742c7ec4a46c4"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title"><a href="https://house.yahoo.com.tw/%E9%9C%87%E5%87%BA%E9%AB%98%E6%88%BF%E5%83%B9-%E5%8C%97%E5%B8%82%E6%9C%80%E7%86%B1%E4%B8%89%E6%8D%B7%E9%81%8B%E5%AE%858%E5%AD%97%E9%A0%AD-141511660.html" target="_blank">震出高房價！北市最熱三捷運宅8字頭</a></h5>
-              <p class="news-time">
-                2021-04-24
-              </p>
-              <p class="card-text">
-                捷運宅享有到站即到家優勢，成為不少人購屋首選。永慶房屋統計台北市2020年交易最熱門的捷運宅，前三名依序為內湖站...
-              </p>
-              <p class="news-source">
-                資料來源：三立新聞網
-              </p>
-              <a href="https://house.yahoo.com.tw/%E9%9C%87%E5%87%BA%E9%AB%98%E6%88%BF%E5%83%B9-%E5%8C%97%E5%B8%82%E6%9C%80%E7%86%B1%E4%B8%89%E6%8D%B7%E9%81%8B%E5%AE%858%E5%AD%97%E9%A0%AD-141511660.html" class="btn btn-primary">顯示更多</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3 mt-2">
-          <img
-            src="./img/jobs/allef-vinicius-178362.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3 mt-2">
-          <img
-            src="./img/jobs/allef-vinicius-178362.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3 mt-2">
-          <img
-            src="./img/jobs/allef-vinicius-178362.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-lg-3 mt-2">
-          <img
-            src="./img/jobs/allef-vinicius-178362.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+  </head>
+  <body>
+    <script src="./app.js"></script>
+    <!-- header -->
+    <header>
+      <div class="logo">
+        <img src="./picture/logo.png" alt="Logo" />
+        <div>
+          <h1>購房好事</h1>
+          <h1 style="font-size: 1rem">Go Found House</h1>
         </div>
       </div>
-    </div>
+      <div onclick="toggleMenu();">
+        <a href="#" class="showmenu"><img src="./picture/list.png" alt="" /></a>
+      </div>
+      <nav id="menuShow">
+        <ul>
+          <li><a href="./index.html">首頁</a></li>
+          <li><a href="./district.html">行政區</a></li>
+          <li><a href="./lifefunction.html">周邊機能</a></li>
+          <li><a href="./houseprice.html">房價預測</a></li>
+          <li><a href="#">最新消息</a></li>
+        </ul>
+      </nav>
+      <div class="login">
+        <a href="#">會員登入</a>
+      </div>
+    </header>
+    <main>
+      <div class="job">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-lg-3 mt-2 card-box">
+              <img
+                src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2021/05/02/2/12209361.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=600"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="https://house.udn.com/house/story/5889/5427197" target="_blank"
+                      >台北市蛋白區公寓 房價親民</a
+                    >
+                  </h5>
+                  <p class="news-time">2021-05-02</p>
+                  <p class="card-text">
+                    台北市房價高昂，民眾因預算考量，在公寓或電梯大樓中難以抉擇。業者根據實價登錄資料，統計2020年台北市的成交數據，交易前三名的都是北市的蛋白區
+                  </p>
+                  <p class="news-source">資料來源：聯合報房地產</p>
+                  <a
+                    href="https://house.udn.com/house/story/5889/5427197"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >顯示更多</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mt-2 card-box">
+              <img
+                src="https://p1-news.hfcdn.com/p1-news/MjgzNjkyNm5ld3M,/02d608920b51ef28_823x579.png/qs/w=600&h=600&r=22000"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="https://news.housefun.com.tw/news/article/124988295447.html" target="_blank"
+                      >蛋黃區沒在怕少子化！業者：民眾有「這個」照買</a
+                    >
+                  </h5>
+                  <p class="news-time">2021-04-30</p>
+                  <p class="card-text">
+                    台師大、青田街生活圈為北市精華地段，不僅住宅、商店及道路規劃完善，綠地覆蓋率也相當高，區域內匯聚了許多具異國風情的雜貨小舖、餐館...
+                  </p>
+                  <p class="news-source">資料來源：好房網 HouseFun News</p>
+                  <a
+                    href="https://news.housefun.com.tw/news/article/124988295447.html"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >顯示更多</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mt-2 card-box">
+              <img
+                src="https://cimg.cnyes.cool/prod/news/4635857/xl/afff97088d6412207432c60411d27ecf.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="https://news.cnyes.com/news/id/4635857" target="_blank"
+                      >看當前房市過熱 房價有飛漲風險</a
+                    >
+                  </h5>
+                  <p class="news-time">2021-04-29</p>
+                  <p class="card-text">
+                    央行今公布理監事聯席會議議事錄摘要，全體理事均贊同調整選擇性信用管制措施，數位理事也對此表達看法，提及當前房市過熱、房價有飛漲的風險。
+                  </p>
+                  <p class="news-source">資料來源：鉅亨網</p>
+                  <a
+                    href="https://news.cnyes.com/news/id/4635857"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >顯示更多</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mt-2 card-box">
+              <img
+                src="https://hp1.591.com.tw/house/active/2021/04/28/161958100319153603_820x9999.scale.water1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="https://news.591.com.tw/news/6482" target="_blank"
+                      >北捷25周年 木柵線沿線房價翻倍成長</a
+                    >
+                  </h5>
+                  <p class="news-time">2021-04-28</p>
+                  <p class="card-text">
+                    台北捷運上月滿25週年，根據中信房屋統計，第一條商轉捷運路線「木柵線」25年來以六張犁站到忠孝復興站的大安區成長幅度最大，房價成長了1.72倍。
+                  </p>
+                  <p class="news-source">資料來源：591租屋網</p>
+                  <a
+                    href="https://news.591.com.tw/news/6482"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >顯示更多</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mt-2 card-box">
+              <img
+                src="https://hp2.591.com.tw/house/active/2021/04/28/161957593860038803_820x9999.scale.water1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="https://news.591.com.tw/news/6481" target="_blank"
+                      >都更夯 西區地標遠百寶慶店將重建轉型</a
+                    >
+                  </h5>
+                  <p class="news-time">2021-04-28</p>
+                  <p class="card-text">
+                    都市更新勢在必行，除了住宅之外，包括國賓、福華、馥敦、王朝等不少飯店、百貨也跟上這波危老都更熱潮。
+                  </p>
+                  <p class="news-source">資料來源：591租屋網</p>
+                  <a
+                    href="https://news.591.com.tw/news/6481"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >顯示更多</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mt-2">
+              <img
+                src="https://hp1.591.com.tw/house/active/2021/04/19/161882382462305100_820x9999.scale.water1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="https://news.591.com.tw/news/6426" target="_blank"
+                      >上半年推案量逾百億 1300萬入主中山</a
+                    >
+                  </h5>
+                  <p class="news-time">2021-04-27</p>
+                  <p class="card-text">
+                    中山上半年預計超過百億量體進場，其中有總銷30億指標案，近期捷運多小宅案場，坪數約10~35坪，最低1300萬可入住北市，未來供給量充足。
+                  </p>
+                  <p class="news-source">資料來源：591租屋網</p>
+                  <a
+                    href="https://news.591.com.tw/news/6426"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >顯示更多</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mt-2">
+              <img
+                src="https://media.zenfs.com/ko/setn.com.tw/fbf0732dfe04c880556742c7ec4a46c4"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a
+                      href="https://house.yahoo.com.tw/%E9%9C%87%E5%87%BA%E9%AB%98%E6%88%BF%E5%83%B9-%E5%8C%97%E5%B8%82%E6%9C%80%E7%86%B1%E4%B8%89%E6%8D%B7%E9%81%8B%E5%AE%858%E5%AD%97%E9%A0%AD-141511660.html"
+                      target="_blank"
+                      >震出高房價！北市最熱三捷運宅8字頭</a
+                    >
+                  </h5>
+                  <p class="news-time">2021-04-24</p>
+                  <p class="card-text">
+                    捷運宅享有到站即到家優勢，成為不少人購屋首選。永慶房屋統計台北市2020年交易最熱門的捷運宅，前三名依序為內湖站...
+                  </p>
+                  <p class="news-source">資料來源：三立新聞網</p>
+                  <a
+                    href="https://house.yahoo.com.tw/%E9%9C%87%E5%87%BA%E9%AB%98%E6%88%BF%E5%83%B9-%E5%8C%97%E5%B8%82%E6%9C%80%E7%86%B1%E4%B8%89%E6%8D%B7%E9%81%8B%E5%AE%858%E5%AD%97%E9%A0%AD-141511660.html"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >顯示更多</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mt-2">
+              <img
+                src="https://hp2.591.com.tw/house/active/2021/04/19/161879567321208707_820x9999.scale.water1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a
+                      href="https://news.591.com.tw/news/6417"
+                      target="_blank"
+                      >房地合一2.0不夠 北市呼籲中央提高囤房稅</a
+                    >
+                  </h5>
+                  <p class="news-time">2021-04-19</p>
+                  <p class="card-text">
+                    為解決房價高漲問題，立法院於本月三讀通過「房地合一稅2.0」所得稅法修正案，對此台北市政府財政局建議中央應同時搭配囤房稅改，使稅制更合理。
+                  </p>
+                  <p class="news-source">資料來源：三立新聞網</p>
+                  <a
+                    href="https://news.591.com.tw/news/6417"
+                    class="btn btn-primary"
+                    target="_blank"
+                    >顯示更多</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <nav aria-label="Page navigation example" class="mt-3">
-      <ul class="pagination justify-content-center">
-        <li class="page-item disabled">
-          <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
-            >上一頁</a
-          >
-        </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#">下一頁</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  </main>
+        <nav aria-label="Page navigation example" class="mt-3">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+                >上一頁</a
+              >
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">下一頁</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </main>
+  </body>
 </html>
