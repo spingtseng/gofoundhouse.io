@@ -18,7 +18,7 @@ header {
 header div.logo {
   display: flex;
   align-items: center;
-  flex: 4 1 400px;
+  flex: 1 1 200px;
   margin-left: 1rem;
 }
 
@@ -48,15 +48,15 @@ header div a.showmenu img {
   /* color: white; */
 }
 header nav {
-  flex: 2 1 400px;
+  flex: 1 1 400px;
 }
 header nav ul {
   display: flex;
   list-style-type: none;
   justify-content: space-around;
-  align-self: start;
+  align-self: center;
   position: relative;
-  right: 25rem;
+  /* right: 25rem; */
 }
 
 header nav ul li a {
@@ -69,7 +69,7 @@ header nav ul li a:hover {
 }
 header div {
   flex: 1 1 50px;
-  margin-right: 1rem;
+  /* margin-right: 0rem; */
 }
 header div a {
   background-color: white;
@@ -136,6 +136,7 @@ main section.backImage h1 {
   color: gray;
 }
 
+
 @media screen and (max-width: 1000px) {
   header {
     flex-direction: column;
@@ -162,7 +163,6 @@ main section.backImage h1 {
     top: 1em;
     right: 1em;
     float: right;
-    /* color: white; */
   }
   header nav {
     display: none;
@@ -176,10 +176,7 @@ main section.backImage h1 {
     left: 0;
     right: 0;
   }
-  header nav.menu-show {
-    max-height: 500px;
-    transition: max-height 2.3s;
-  }
+ 
   header nav ul {
     background-color: black;
     font-size: 1.5rem;
