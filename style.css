@@ -67,11 +67,11 @@ header nav ul li a {
 header nav ul li a:hover {
   color: grey;
 }
-header div {
+header div.menu {
   flex: 1 1 50px;
-  /* margin-right: 0rem; */
 }
-header div a {
+header div.login a {
+  margin-right: 1rem;
   background-color: white;
   color: black;
   padding: 0.1rem 0.5rem;
@@ -137,7 +137,7 @@ main section.backImage h1 {
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   header {
     flex-direction: column;
     position: relative;
