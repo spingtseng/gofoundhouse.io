@@ -8,8 +8,58 @@
       name="description"
       content="購房好事|Go Found House 給您台北市最合理的房價資訊"
     />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["季年度", "全國", "台北市"],
+          ["105年第1季", 99.32, 100.08],
+          ["105年第2季", 100.76, 100.2],
+          ["105年第3季", 100.69, 100.39],
+          ["105年第4季", 99.09, 99.27],
+          ["106年第1季", 99.42, 98.29],
+          ["106年第2季", 99.86, 98.54],
+          ["106年第3季", 100.69, 99.14],
+          ["106年第4季", 100.6, 98.33],
+          ["107年第1季", 100.62, 99.46],
+          ["107年第2季", 100.08, 100.01],
+          ["107年第3季", 100.63, 100.5],
+          ["107年第4季", 100.8, 100.07],
+          ["108年第1季", 101.09, 100.11],
+          ["108年第2季", 101.59, 99.59],
+          ["108年第3季", 103.57, 100.52],
+          ["108年第4季", 104.14, 100.8],
+          ["109年第1季", 104.69, 100.61],
+          ["109年第2季", 105.39, 100.7],
+          ["109年第3季", 106.89, 102.3],
+          ["109年第4季", 108.17, 103.65],
+        ]);
+
+        var options = {
+          title: "台北市住宅價格季指數趨勢圖",
+          curveType: "function",
+          legend: { position: "bottom" },
+        };
+
+        var chart = new google.visualization.LineChart(
+          document.getElementById("curve_chart")
+        );
+
+        chart.draw(data, options);
+      }
+    </script>
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
@@ -48,8 +98,58 @@
     <main>
       <section class="backImage">
         <div class="filter"></div>
+        <div class="title">
+          <!-- <h1>
+            結合實價登錄、生活機能作房屋評價，更貼近消費者需求<br />透過機器學習找出影響價格最大的因素作為購屋的參考
+          </h1> -->
+        </div>
       </section>
-      <div></div>
+      <section class="chartinfo">
+        <div class="chart" id="curve_chart" style="height: 500px;"></div>
+        <div class="info">
+          <div>
+            行政院100年10月26日核定「民國101年至民國104年整體住宅政策實施方案」，以「編製住宅價格指數並定期發布」做為具體措施之一。內政部以不動產成交案件實際申報資料，計算出住宅價格季指數，提供住宅價格之變動趨勢資訊，透過不動產估價師尋找比較案例之概念，搜尋與本季交易案例高度相似並具有替代性的相似房屋，計算於不同時點之價格變動，進而以「類重複交易法」方式編製作為衡量住宅市場價格變動的參考指標。目前編製完成全國及6直轄市住宅價格季指數，編製期間為101年第3季至109年第4季。<br /><br /><br />
+            資料來源:內政部不動產資訊平台
+          </div>
+        </div>
+      </section>
     </main>
+    <footer>
+      <section class="left">
+        <img src="./picture/logov2.png" alt="" />
+      </section>
+      <section class="right">
+        <div class="info">
+          <div class="title"><h1>購房好事 GoFoundHouse</h1></div>
+          <div class="content">
+            我們是購房好事團隊 ！ <br />結合實價登錄、生活機能做為房屋評價，
+            <br />利用AI機器學習找出影響價格最大的因素，<br />
+            為購屋者在預算內找到合宜的住所。
+          </div>
+        </div>
+        <div class="info">
+          <div class="title"><h1>整合服務</h1></div>
+          <div class="content">
+            <a href="#" >裝潢服務</a><br />
+            <a href="#" >家具推薦</a>
+          </div>
+        </div>
+        <div class="info">
+          <div class="title"><h1>聯絡我們</h1></div>
+          <div class="content">
+            <div>gofoundhouse@gmail.com</div>
+            <a href="mailto:gofoundhouse@gmail.com" target="_blank"
+              ><img src="./picture/gmail.png" alt="用gmail傳送"
+            /></a>
+            <a href="https://lin.ee/myyTjhr"
+              ><img src="./picture/line.png" alt="用Line傳送"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <footer class="copyright">
+      <div>Copyright © 2021 by GoFoundHouse All Rights Reserved</div>
+    </footer>
   </body>
 </html>
