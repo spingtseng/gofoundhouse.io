@@ -18,7 +18,7 @@
         position: absolute;
         top: 12%;
         left: 0;
-        height: 88%;
+        height: 85%;
         width: 100%;
       }
 
@@ -38,6 +38,29 @@
         padding: 10px;
         display: none;
       }
+      footer.infomation{
+        position: absolute;
+        top: 97%;
+        width: 100%;
+      }
+
+      @media screen and (min-height: 1000px) {
+        #map {
+          top: 10%;
+        }
+        footer.infomation{
+        top: 95%;
+      }
+      }
+      @media screen and (min-height: 1200px) {
+        #map {
+          top: 5%;
+        }
+        footer.infomation{
+        top: 90%;
+      }
+      }
+   
     </style>
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
@@ -85,7 +108,40 @@
         <div>2020年平均單價：<span id="price2020"> BBBB </span></div>
       </div>
     </main>
-
+    <footer class="infomation">
+      <section class="left">
+        <img src="./picture/logov2.png" alt="" />
+      </section>
+      <section class="right">
+        <div class="info">
+          <div class="title"><h1>購房好事 GoFoundHouse</h1></div>
+          <div class="content">
+            購房好事 ！ <br />結合實價登錄、生活機能做為房屋評價，
+            <br />利用AI機器學習找出影響價格最大的因素，<br />
+            為購屋者在預算內找到合宜的住所。
+          </div>
+        </div>
+        <div class="info">
+          <div class="title"><h1>整合服務</h1></div>
+          <div class="content">
+            <a href="#">裝潢服務</a><br />
+            <a href="#">家具推薦</a>
+          </div>
+        </div>
+        <div class="info">
+          <div class="title"><h1>聯絡我們</h1></div>
+          <div class="content">
+            <div>gofoundhouse@gmail.com</div>
+            <a href="mailto:gofoundhouse@gmail.com" target="_blank"
+              ><img src="./picture/gmail.png" alt="用gmail傳送"
+            /></a>
+            <a href="https://lin.ee/myyTjhr"
+              ><img src="./picture/line.png" alt="用Line傳送"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
@@ -107,6 +163,25 @@
         });
 
         map.data.addListener("mouseover", function (event) {
+          map.data.revertStyle();
+          map.data.overrideStyle(event.feature, { fillColor: "#000" });
+          // ADD: get the info from event
+          const distinctInfo = event.feature.i;
+
+          // ADD: put the info the HTML
+          $("#city").html(distinctInfo.COUNTYNAME);
+          $("#distinct").html(distinctInfo.TOWNNAME);
+          $("#price2020").html(distinctInfo.price2020);
+
+          // ADD: update the panel's position with coordinates of mouse cursor
+          $("#info-panel").css({
+            left: event.domEvent.clientX + "px",
+            top: event.domEvent.clientY + "px",
+          });
+          // ADD: make panel to be visible for first time.
+          $("#info-panel").fadeIn();
+        });
+        map.data.addListener("touchstart", function (event) {
           map.data.revertStyle();
           map.data.overrideStyle(event.feature, { fillColor: "#000" });
           // ADD: get the info from event
