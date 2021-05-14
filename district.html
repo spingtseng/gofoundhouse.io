@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="購房好事|Go Found House 給您台北市最合理的房價資訊">
+    <meta
+      name="description"
+      content="購房好事|Go Found House 給您台北市最合理的房價資訊"
+    />
     <style type="text/css" media="screen">
       html {
         height: 100%;
@@ -13,10 +16,10 @@
 
       #map {
         position: absolute;
-        top: 0%;
+        top: 12%;
         left: 0;
-        height: 100%;
-        width: 100vw;
+        height: 88%;
+        width: 100%;
       }
 
       /* #body {
@@ -26,6 +29,15 @@
         top: 0;
         left: 0;
     } */
+
+      /* ADD: style */
+      #info-panel {
+        position: fixed;
+        border-radius: 10px;
+        background: rgb(255, 243, 245);
+        padding: 10px;
+        display: none;
+      }
     </style>
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
@@ -56,14 +68,24 @@
           <li><a href="./news.html">最新消息</a></li>
         </ul>
       </nav>
-      <div  class="menu" onclick="toggleMenu();">
+      <div class="menu" onclick="toggleMenu();">
         <a href="#" class="showmenu"><img src="./picture/list.png" alt="" /></a>
       </div>
       <div class="login">
         <a href="#">會員登入</a>
       </div>
     </header>
-    <div id="map"></div>
+    <main>
+      <div id="map"></div>
+      <!-- ADD: add the info panel here -->
+      <div id="info-panel">
+        <div>
+          <span id="city"> AAAA </span><span id="distinct"> BBBB </span>
+        </div>
+        <div>2020年平均單價：<span id="price2020"> BBBB </span></div>
+      </div>
+    </main>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
@@ -77,15 +99,31 @@
         map.data.loadGeoJson("taipeidistrict.geojson");
 
         map.data.setStyle({
-          strokeWeight:1,
+          strokeWeight: 1,
           strokeOpacity: 0.5,
           strokeColor: "#000",
           fillColor: "#f00",
           fillOpacity: 0.3,
         });
+
         map.data.addListener("mouseover", function (event) {
           map.data.revertStyle();
           map.data.overrideStyle(event.feature, { fillColor: "#000" });
+          // ADD: get the info from event
+          const distinctInfo = event.feature.i;
+
+          // ADD: put the info the HTML
+          $("#city").html(distinctInfo.COUNTYNAME);
+          $("#distinct").html(distinctInfo.TOWNNAME);
+          $("#price2020").html(distinctInfo.price2020);
+
+          // ADD: update the panel's position with coordinates of mouse cursor
+          $("#info-panel").css({
+            left: event.domEvent.clientX + "px",
+            top: event.domEvent.clientY + "px",
+          });
+          // ADD: make panel to be visible for first time.
+          $("#info-panel").fadeIn();
         });
       }
     </script>

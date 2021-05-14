@@ -471,9 +471,10 @@
         "FID": 151,
         "TOWNID": "A02",
         "TOWNCODE": 63000030,
-        "COUNTYNAME": "臺北市",
+        "COUNTYNAME": "台北市",
         "TOWNNAME": "大安區",
         "TOWNENG": "Da'an District",
+        "price2020":"93萬/坪",
         "COUNTYID": "A",
         "COUNTYCODE": 63000
       }
@@ -3054,8 +3055,9 @@
         "FID": 152,
         "TOWNID": "A11",
         "TOWNCODE": 63000080,
-        "COUNTYNAME": "臺北市",
+        "COUNTYNAME": "台北市",
         "TOWNNAME": "文山區",
+        "price2020":"52.7萬/坪",
         "TOWNENG": "Wenshan District",
         "COUNTYID": "A",
         "COUNTYCODE": 63000
@@ -3689,9 +3691,10 @@
         "FID": 333,
         "TOWNID": "A17",
         "TOWNCODE": 63000020,
-        "COUNTYNAME": "臺北市",
+        "COUNTYNAME": "台北市",
         "TOWNNAME": "信義區",
         "TOWNENG": "Xinyi District",
+        "price2020":"88.7萬/坪",
         "COUNTYID": "A",
         "COUNTYCODE": 63000
       }
@@ -4430,9 +4433,10 @@
         "FID": 334,
         "TOWNID": "A05",
         "TOWNCODE": 63000070,
-        "COUNTYNAME": "臺北市",
+        "COUNTYNAME": "台北市",
         "TOWNNAME": "萬華區",
         "TOWNENG": "Wanhua District",
+        "price2020":"53.6萬/坪",
         "COUNTYID": "A",
         "COUNTYCODE": 63000
       }
@@ -4916,9 +4920,10 @@
         "FID": 335,
         "TOWNID": "A03",
         "TOWNCODE": 63000050,
-        "COUNTYNAME": "臺北市",
+        "COUNTYNAME": "台北市",
         "TOWNNAME": "中正區",
         "TOWNENG": "Zhongzheng District",
+        "price2020":"82.8萬/坪",
         "COUNTYID": "A",
         "COUNTYCODE": 63000
       }
@@ -6990,9 +6995,10 @@
         "FID": 336,
         "TOWNID": "A13",
         "TOWNCODE": 63000090,
-        "COUNTYNAME": "臺北市",
+        "COUNTYNAME": "台北市",
         "TOWNNAME": "南港區",
         "TOWNENG": "Nangang District",
+        "price2020":"63.7萬/坪",
         "COUNTYID": "A",
         "COUNTYCODE": 63000
       }
@@ -7459,9 +7465,10 @@
         "FID": 337,
         "TOWNID": "A01",
         "TOWNCODE": 63000010,
-        "COUNTYNAME": "臺北市",
+        "COUNTYNAME": "台北市",
         "TOWNNAME": "松山區",
         "TOWNENG": "Songshan District",
+        "price2020":"75.3萬/坪",
         "COUNTYID": "A",
         "COUNTYCODE": 63000
       }
@@ -7905,9 +7912,10 @@
         "FID": 338,
         "TOWNID": "A09",
         "TOWNCODE": 63000060,
-        "COUNTYNAME": "臺北市",
+        "COUNTYNAME": "台北市",
         "TOWNNAME": "大同區",
         "TOWNENG": "Datong District",
+        "price2020":"65.1萬/坪",
         "COUNTYID": "A",
         "COUNTYCODE": 63000
       }
@@ -8639,9 +8647,10 @@
         "FID": 339,
         "TOWNID": "A10",
         "TOWNCODE": 63000040,
-        "COUNTYNAME": "臺北市",
+        "COUNTYNAME": "台北市",
         "TOWNNAME": "中山區",
         "TOWNENG": "Zhongshan District",
+        "price2020":"71.5萬/坪",
         "COUNTYID": "A",
         "COUNTYCODE": 63000
       }
@@ -10115,9 +10124,10 @@
         "FID": 340,
         "TOWNID": "A14",
         "TOWNCODE": 63000100,
-        "COUNTYNAME": "臺北市",
+        "COUNTYNAME": "台北市",
         "TOWNNAME": "內湖區",
         "TOWNENG": "Neihu District",
+        "price2020":"65.1萬/坪",
         "COUNTYID": "A",
         "COUNTYCODE": 63000
       }
@@ -13265,9 +13275,10 @@
         "FID": 341,
         "TOWNID": "A15",
         "TOWNCODE": 63000110,
-        "COUNTYNAME": "臺北市",
+        "COUNTYNAME": "台北市",
         "TOWNNAME": "士林區",
         "TOWNENG": "Shilin District",
+        "price2020":"66萬/坪",
         "COUNTYID": "A",
         "COUNTYCODE": 63000
       }
@@ -15922,9 +15933,10 @@
         "FID": 342,
         "TOWNID": "A16",
         "TOWNCODE": 63000120,
-        "COUNTYNAME": "臺北市",
+        "COUNTYNAME": "台北市",
         "TOWNNAME": "北投區",
         "TOWNENG": "Beitou District",
+        "price2020":"54.9萬/坪",
         "COUNTYID": "A",
         "COUNTYCODE": 63000
       }
