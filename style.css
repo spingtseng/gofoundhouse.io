@@ -118,19 +118,6 @@ main section.backImage div.title h1 {
   color: white;
   text-shadow: 0.25rem 0.25rem 1px black;
 }
-/* div.contact{
-  position: relative;
-} */
-/* div.contact a{
-  position: absolute;
-  bottom: 2em;
-  right:2em;
-}
-div.contact a img#line{
-  width: 4em;
-  height: 4em;
-} */
-
 main section.chartinfo {
   display: flex;
   /* flex-direction: column; */
@@ -152,6 +139,8 @@ main section.chartinfo div.info {
 footer.info {
   display: flex;
   background-color: black;
+  padding: 0;
+  margin: 0;
 }
 footer.info section.left {
   flex: 1 1 50px;
@@ -292,17 +281,17 @@ footer.copyright div {
   main section.chartinfo div.info {
     flex: 1 1 50px;
   }
-  footer{
+  footer.info{
     flex-direction: column;
     padding: 0rem 1rem;
   }
-  footer section.left img {
+  footer.info section.left img {
     float: left;
   }
-  footer section.right {
+  footer.info section.right {
     flex-direction: column;
   }
-  footer section.right div.info div.content a img {
+  footer.info section.right div.info div.content a img {
     width: 2rem;
     height: 2rem;
   }
