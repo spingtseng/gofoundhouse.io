@@ -149,54 +149,56 @@ main section.chartinfo div.info {
   margin-right: 3em;
 }
 
-footer {
+footer.info {
   display: flex;
   background-color: black;
 }
-footer section.left {
+footer.info section.left {
   flex: 1 1 50px;
   justify-self: center;
 }
-footer section.left img {
+footer.info section.left img {
   width: 12rem;
   height: 12rem;
   float: right;
   object-position: center;
 }
-footer section.right {
+footer.info section.right {
   display: flex;
   /* flex-direction: column; */
   flex: 5 1 50px;
   color: white;
   justify-content: space-evenly;
 }
-footer section.right div.info div.title {
+footer.info section.right div.info div.title {
   margin: 0.5rem 0rem;
 }
-footer section.right div.info div.title h1 {
+footer.info section.right div.info div.title h1 {
   border: none;
 }
-footer section.right div.info div.content {
+footer.info section.right div.info div.content {
   margin: 0.5rem 0rem;
 }
-footer section.right div.info div.content a {
+footer.info section.right div.info div.content a {
   color: white;
   text-decoration: none;
 }
-footer section.right div.info div.content a:hover {
+footer.info section.right div.info div.content a:hover {
   color: grey;
 }
-footer section.right div.info div.content a img {
+footer.info section.right div.info div.content a img {
   width: 3rem;
   height: 3rem;
 }
 footer.copyright {
+  display: flex;
+  background: black;
   align-items: center;
   justify-content: center;
 }
 footer.copyright div {
   color: white;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
   font-family: "Ropa Sans", sans-serif;
 }
 

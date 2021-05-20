@@ -38,34 +38,28 @@
         padding: 10px;
         display: none;
       }
-      footer.infomation{
+      footer.footer {
         position: absolute;
         top: 97%;
         width: 100%;
       }
-
-      @media screen and (min-height: 1000px) {
+      @media screen and (min-height: 900px) {
         #map {
-          top: 10%;
+          top: 4%;
         }
-        footer.infomation{
-        top: 95%;
-      }
-      }
-      @media screen and (min-height: 1200px) {
-        #map {
-          top: 5%;
+        footer.footer {
+          top: 90%;
         }
-        footer.infomation{
-        top: 90%;
       }
-      }
-   
     </style>
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
       rel="stylesheet"
     />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap"
+    rel="stylesheet"
+  />
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" href="./picture/logo.png" />
     <title>行政區 | Go Found House</title>
@@ -108,39 +102,44 @@
         <div>2020年平均單價：<span id="price2020"> BBBB </span></div>
       </div>
     </main>
-    <footer class="infomation">
-      <section class="left">
-        <img src="./picture/logov2.png" alt="" />
-      </section>
-      <section class="right">
-        <div class="info">
-          <div class="title"><h1>購房好事 GoFoundHouse</h1></div>
-          <div class="content">
-            購房好事 ！ <br />結合實價登錄、生活機能做為房屋評價，
-            <br />利用AI機器學習找出影響價格最大的因素，<br />
-            為購屋者在預算內找到合宜的住所。
+    <footer class="footer">
+      <footer class="info">
+        <section class="left">
+          <img src="./picture/logov2.png" alt="" />
+        </section>
+        <section class="right">
+          <div class="info">
+            <div class="title"><h1>購房好事 GoFoundHouse</h1></div>
+            <div class="content">
+              購房好事 ！ <br />結合實價登錄、生活機能做為房屋評價，
+              <br />利用AI機器學習找出影響價格最大的因素，<br />
+              為購屋者在預算內找到合宜的住所。
+            </div>
           </div>
-        </div>
-        <div class="info">
-          <div class="title"><h1>整合服務</h1></div>
-          <div class="content">
-            <a href="#">裝潢服務</a><br />
-            <a href="#">家具推薦</a>
+          <div class="info">
+            <div class="title"><h1>整合服務</h1></div>
+            <div class="content">
+              <a href="#">裝潢服務</a><br />
+              <a href="#">家具推薦</a>
+            </div>
           </div>
-        </div>
-        <div class="info">
-          <div class="title"><h1>聯絡我們</h1></div>
-          <div class="content">
-            <div>gofoundhouse@gmail.com</div>
-            <a href="mailto:gofoundhouse@gmail.com" target="_blank"
-              ><img src="./picture/gmail.png" alt="用gmail傳送"
-            /></a>
-            <a href="https://lin.ee/myyTjhr"
-              ><img src="./picture/line.png" alt="用Line傳送"
-            /></a>
+          <div class="info">
+            <div class="title"><h1>聯絡我們</h1></div>
+            <div class="content">
+              <div>gofoundhouse@gmail.com</div>
+              <a href="mailto:gofoundhouse@gmail.com" target="_blank"
+                ><img src="./picture/gmail.png" alt="用gmail傳送"
+              /></a>
+              <a href="https://lin.ee/myyTjhr"
+                ><img src="./picture/line.png" alt="用Line傳送"
+              /></a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </footer>
+      <footer class="copyright">
+        <div>Copyright © 2021 by GoFoundHouse All Rights Reserved</div>
+      </footer>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
